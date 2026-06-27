@@ -50,11 +50,14 @@ LABEL_MAPPING = {
     "data mining"                     : "Data Mining",
 
     # Metode Pengembangan Sistem
+    "programming extreme"             : "Extreme Programming (XP)",
     "extreme programming"             : "Extreme Programming (XP)",
     "rapid application development"   : "Rapid Application Development (RAD)",
     "rapid application"               : "Rapid Application Development (RAD)",
     "prototyping"                     : "Metode Prototyping",
     "agile scrum"                     : "Agile Scrum",
+    "bangun"                          : "Pengembangan Sistem Informasi",
+    "mudah"                           : "Pengembangan Sistem Informasi",
 
     # Sistem Pendukung Keputusan
     "sistem pendukung keputusan"      : "Sistem Pendukung Keputusan (SPK)",
@@ -73,6 +76,7 @@ LABEL_MAPPING = {
     "sistem informasi kesehatan"      : "Sistem Informasi Kesehatan",
     "rekam medis"                     : "Sistem Rekam Medis",
     "perpustakaan"                    : "Sistem Informasi Perpustakaan",
+    "pustaka"                         : "Sistem Informasi Perpustakaan & Digital Library",
     "presensi"                        : "Sistem Presensi & Absensi",
     "absensi"                         : "Sistem Presensi & Absensi",
     "inventory"                       : "Sistem Manajemen Inventori",
