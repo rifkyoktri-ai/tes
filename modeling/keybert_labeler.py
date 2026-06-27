@@ -1,7 +1,7 @@
 import re
 from keybert import KeyBERT
 from sentence_transformers import SentenceTransformer
-from stopwords_id import get_all_stopwords
+from indonesian_stopwords import get_all_stopwords
 
 LABEL_MAPPING = {
     "neighbor nearest"       : "K-Nearest Neighbor (KNN)",

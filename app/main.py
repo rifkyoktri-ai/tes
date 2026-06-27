@@ -43,7 +43,7 @@ def load_data():
         topic_dist = pd.read_csv(base_path / "model" / "topic_distribution.csv")
         
         # Load preprocessed dataset
-        dataset = pd.read_csv(base_path / "data" / "proses" / "dataset_preprocessed.csv")
+        dataset = pd.read_csv(base_path / "data" / "intermediate" / "dataset_preprocessed.csv")
         
         return metrics, topic_dist, dataset
     except Exception as e:

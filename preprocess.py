@@ -7,7 +7,7 @@ import re
 from datetime import datetime
 
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
-from stopwords_id import get_all_stopwords
+from indonesian_stopwords import get_all_stopwords
 
 logging.basicConfig(
     level=logging.INFO,
@@ -19,7 +19,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-PROSES_DIR = 'data/proses'
+PROSES_DIR = 'data/intermediate'
 os.makedirs(PROSES_DIR, exist_ok=True)
 os.makedirs('logs', exist_ok=True)
 

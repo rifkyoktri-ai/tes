@@ -5,7 +5,7 @@ from typing import List, Tuple, Dict, Optional
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-from stopwords_id import get_all_stopwords
+from indonesian_stopwords import get_all_stopwords
 
 logger = logging.getLogger(__name__)
 

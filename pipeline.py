@@ -21,7 +21,7 @@ from gensim.models import LdaModel, CoherenceModel
 import pyLDAvis
 import pyLDAvis.gensim_models as gensimvis
 
-from stopwords_id import get_all_stopwords
+from indonesian_stopwords import get_all_stopwords
 
 logging.basicConfig(
     level=logging.INFO,
@@ -33,7 +33,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-PROSES_DIR = 'data/proses'
+PROSES_DIR = 'data/intermediate'
 MODEL_DIR = 'model'
 
 

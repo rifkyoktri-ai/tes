@@ -2,6 +2,7 @@
 logs/
 __pycache__/
 data/raw/*_files/
+~$*.xlsx
 *.pyc
 *.pyo
 .env
