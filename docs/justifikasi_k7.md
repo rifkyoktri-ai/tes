@@ -77,3 +77,32 @@ Model diretrain pada 2026-06-29 menggunakan stopwords konservatif
 (132 kata generik) untuk menjaga informasi domain SI tetap utuh.
 Parameter terbaik: alpha=symmetric, eta=symmetric, passes=10.
 Coherence final: **0.5132** (melebihi baseline 0.4559).
+
+---
+
+## Referensi Metodologis
+
+### Pemilihan Metrik Coherence c_v
+
+Metrik coherence c_v dipilih berdasarkan studi komparatif oleh Röder, Both,
+& Hinneburg (2015) yang mengevaluasi 8 metrik coherence terhadap human
+judgment rating. Studi tersebut menemukan bahwa c_v memiliki korelasi
+tertinggi dengan penilaian manusia (Pearson r = 0.73) dibandingkan metrik
+lain termasuk u_mass, c_uci, dan c_npmi.
+
+Röder, M., Both, A., & Hinneburg, A. (2015). Exploring the space of topic
+coherence measures. *Proceedings of the Eighth ACM International Conference
+on Web Search and Data Mining (WSDM 2015)*, 399–408.
+https://doi.org/10.1145/2684822.2685324
+
+### Pemilihan Jumlah Topik K
+
+Pemilihan K melalui grid search mengikuti pendekatan yang digunakan oleh
+Jelodar et al. (2019) dalam survey komprehensif LDA untuk analisis dokumen
+akademik, di mana K optimal ditentukan melalui kombinasi metrik kuantitatif
+(coherence) dan validasi kualitatif domain expert.
+
+Jelodar, H., Wang, Y., Yuan, C., Feng, X., Jiang, X., Li, Y., & Zhao, L.
+(2019). Latent Dirichlet Allocation (LDA) and topic modeling: models,
+applications, a survey. *Multimedia Tools and Applications*, 78(11),
+15169–15211. https://doi.org/10.1007/s11042-018-6894-4
