@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 from pathlib import Path
 from gensim.models import LdaModel
 from wordcloud import WordCloud
@@ -110,6 +109,7 @@ def generate_evaluation_plots():
     df_opt = df[df['k'] == optimal_k]
     
     if not df_opt.empty and len(df_opt) > 1:
+        import seaborn as sns
         # Convert objects to string for pivot
         df_opt = df_opt.copy()
         df_opt['alpha_str'] = df_opt['alpha'].astype(str)
